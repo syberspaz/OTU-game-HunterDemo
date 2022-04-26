@@ -72,7 +72,8 @@ public class AimingTargeting : MonoBehaviour
         {
             Transform tHit = hit.transform;
             GameObject objectHit = tHit.transform.gameObject;
-            if (!objectHit.CompareTag("Interactable")) return;
+            if (objectHit.tag != "Interactable") return;
+            Debug.Log("tag:" + objectHit.tag);
             float dist = Vector3.Distance(Camera.main.transform.position, objectHit.transform.position);
             if (highlightedObject)
             {
