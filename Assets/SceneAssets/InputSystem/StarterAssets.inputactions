@@ -85,6 +85,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ToggleControlsMenu",
+                    "type": "Button",
+                    "id": "9b3fc0b5-f45b-464b-a5d5-26c257d10c4f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -369,7 +378,7 @@
                     "path": "<XInputController>/leftShoulder",
                     "interactions": "Press",
                     "processors": "",
-                    "groups": "Xbox Controller",
+                    "groups": "Xbox Controller;Gamepad",
                     "action": "ToggleShootObject",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -382,6 +391,28 @@
                     "processors": "",
                     "groups": "Xbox Controller;Gamepad",
                     "action": "ToggleShootObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b633f648-6e3a-4bc8-8e0e-eecccb348c68",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller;Gamepad",
+                    "action": "ToggleControlsMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "625ce880-81be-4af4-b0c7-2accba4c1786",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller;Gamepad",
+                    "action": "ToggleControlsMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

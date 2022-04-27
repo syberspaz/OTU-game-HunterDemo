@@ -32,7 +32,8 @@ public class selection : MonoBehaviour
     Vector2 distance;
     public List<GameObject> prefabShootObjectsList;
     int currentShootObjectIndex;
-   
+
+    public GameObject controlsMenu;
 
     void SetPrefabShootDisplay()
     {
@@ -213,5 +214,8 @@ public class selection : MonoBehaviour
         aimingTargeting.ChangeAimDistance(f);
 
     }
-
+    public void OnToggleControlsMenu()
+    {
+        controlsMenu?.SetActive(!controlsMenu.activeSelf);
+    }
 }
