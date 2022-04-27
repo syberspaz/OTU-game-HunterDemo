@@ -74,7 +74,7 @@
                     "id": "55f9373d-e9e8-46f3-816c-e471b6f7ca46",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press,Hold",
                     "initialStateCheck": false
                 },
                 {
@@ -214,7 +214,7 @@
                     "id": "d1d171b6-19d8-47a6-ba3a-71b6a8e7b3c0",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
-                    "processors": "InvertVector2(invertX=false),StickDeadzone,ScaleVector2(x=300,y=300)",
+                    "processors": "InvertVector2(invertX=false),StickDeadzone,ScaleVector2(x=150,y=150)",
                     "groups": "Gamepad",
                     "action": "Look",
                     "isComposite": false,
@@ -277,6 +277,17 @@
                 },
                 {
                     "name": "",
+                    "id": "dd34af10-c351-4498-a3f2-e20182efb26c",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller;Gamepad",
+                    "action": "ShootObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "254c48be-6ea0-42ae-b67f-895eff2dd775",
                     "path": "<Keyboard>/m",
                     "interactions": "Press",
@@ -299,14 +310,47 @@
                 },
                 {
                     "name": "",
-                    "id": "c689f8fd-bf07-4a9e-a5f2-a890b5c331c4",
-                    "path": "<Mouse>/scroll",
+                    "id": "69211380-cf2c-4d15-bcf4-9228352cce3c",
+                    "path": "<XInputController>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "ChangeAimDistance",
+                    "groups": "Xbox Controller;Gamepad",
+                    "action": "Magnesis",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "AimAxis",
+                    "id": "6fdaaed8-8a09-431f-a6c9-1d03389fc13b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeAimDistance",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "a32d12ad-891f-4520-95e2-fc798b40ce39",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox Controller;Gamepad",
+                    "action": "ChangeAimDistance",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f4ef77d9-3c27-46c3-bc56-6b9bf5396e8c",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ChangeAimDistance",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -315,6 +359,28 @@
                     "interactions": "Press",
                     "processors": "",
                     "groups": "KeyboardMouse",
+                    "action": "ToggleShootObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "af713102-bd12-4ea9-9eba-d5b6a010848b",
+                    "path": "<XInputController>/leftShoulder",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Xbox Controller",
+                    "action": "ToggleShootObject",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7dc013ea-169d-4ee8-bf7f-441335ccca0f",
+                    "path": "<XInputController>/rightShoulder",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Xbox Controller;Gamepad",
                     "action": "ToggleShootObject",
                     "isComposite": false,
                     "isPartOfComposite": false

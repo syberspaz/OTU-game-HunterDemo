@@ -8,7 +8,7 @@ public class playerInteractor : MonoBehaviour
     public bool isInRange = false;
     public GameObject objectInRange;
     public Transform aimingTransform;
-    public GameObject aimingTargeting;
+    public AimingTargeting aimingTargeting;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -72,8 +72,13 @@ public class playerInteractor : MonoBehaviour
     }
     private void OnChangeAimDistance()
     {
-        Debug.Log("change aim distance");
-
+        float value = Input.GetAxis("AimAxis");
+        Debug.Log("change aim distance:"+value);
+        if (aimingTargeting)
+        {
+            aimingTargeting.ChangeAimDistance(value);   
+        }
     }
+    
 
 }

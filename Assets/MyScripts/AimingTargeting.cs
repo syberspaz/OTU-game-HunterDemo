@@ -6,15 +6,18 @@ using UnityEngine.InputSystem;
 public class AimingTargeting : MonoBehaviour
 {
     public GameObject gameObjectToUse;
-    public bool displayObject;
+    [SerializeField] public bool displayObject;
+    [SerializeField] public bool useMouseScroll;
+    [SerializeField] public float distanceAimIncrement;
     public float distanceFromCamera;
-    public float scrollSpeed;
+    [SerializeField] public float scrollSpeed;
     [Range(0.0f, 10.0f)]
     public float scrollRangeMin;
     [Range(0.0f, 30.0f)]
     public float scrollRangeMax;
 
     private GameObject highlightedObject;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -52,7 +55,10 @@ public class AimingTargeting : MonoBehaviour
         if(highlightedObject)
             distanceFromCamera = Vector3.Distance(Camera.main.transform.position, highlightedObject.transform.position);
     }
-    
+    public void ChangeAimDistance(float val)
+    {
+        distanceFromCamera += val*distanceAimIncrement;
+    }
     private void FixedUpdate()
     {
 
@@ -60,8 +66,9 @@ public class AimingTargeting : MonoBehaviour
         Vector3 direction = Camera.main.transform.forward;
         if (displayObject)
         {
-            
-            distanceFromCamera += Mouse.current.scroll.ReadValue().y * scrollSpeed;
+            if(useMouseScroll)
+                distanceFromCamera += Mouse.current.scroll.ReadValue().y * scrollSpeed;
+
             distanceFromCamera = Mathf.Clamp(distanceFromCamera, scrollRangeMin, scrollRangeMax);
             gameObjectToUse.transform.position = Camera.main.transform.position + direction * distanceFromCamera;
             gameObjectToUse.SetActive(true);
@@ -73,7 +80,7 @@ public class AimingTargeting : MonoBehaviour
             Transform tHit = hit.transform;
             GameObject objectHit = tHit.transform.gameObject;
             if (objectHit.tag != "Interactable") return;
-            Debug.Log("tag:" + objectHit.tag);
+           // Debug.Log("tag:" + objectHit.tag);
             float dist = Vector3.Distance(Camera.main.transform.position, objectHit.transform.position);
             if (highlightedObject)
             {
@@ -114,4 +121,5 @@ public class AimingTargeting : MonoBehaviour
 
     }
    
+
 }

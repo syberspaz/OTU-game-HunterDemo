@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class selection : MonoBehaviour
 {
+    PlayerInput playerControls;
     public GameObject rootOfAllInteractables;
     public GameObject prefabMagicIndicator;
     private GameObject magicIndicator;
@@ -25,12 +26,13 @@ public class selection : MonoBehaviour
 
     private AimingTargeting aimingTargeting;
     public bool isPressed = false;
-   
 
+    private InputActionAsset inputActions;
+    private InputAction aimAxis;
+    Vector2 distance;
     public List<GameObject> prefabShootObjectsList;
     int currentShootObjectIndex;
-
-
+   
 
     void SetPrefabShootDisplay()
     {
@@ -46,6 +48,13 @@ public class selection : MonoBehaviour
         magicIndicator.SetActive(false);
         currentShootObjectIndex = 0;
         SetPrefabShootDisplay();
+        playerControls = GetComponent<PlayerInput>();
+        inputActions = playerControls.actions;
+        aimAxis = inputActions.FindAction("Player/ChangeAimDistance");
+        Debug.Log(aimAxis);
+        
+        //StarterAssets.StarterAssetsInputs playerInputActions = new StarterAssets.StarterAssetsInputs();
+        //playerInputActions.
     }
 
     void SelectObject(GameObject obj)
@@ -197,5 +206,12 @@ public class selection : MonoBehaviour
         r.velocity = gameObject.transform.forward * 2;
         
     }
-    
+    public void OnChangeAimDistance()
+    {
+
+        float f = aimAxis.ReadValue<float>();
+        aimingTargeting.ChangeAimDistance(f);
+
+    }
+
 }
