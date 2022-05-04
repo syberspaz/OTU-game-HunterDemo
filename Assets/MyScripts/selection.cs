@@ -78,6 +78,11 @@ public class selection : MonoBehaviour
         }
     }
 
+    public void OnCharacterSelect()
+    {
+        gameObject.GetComponent<CharacterSelect>().ChangeCharacter();
+    }
+
     public void OnMagnesis()
     {
         GameObject highlighted;

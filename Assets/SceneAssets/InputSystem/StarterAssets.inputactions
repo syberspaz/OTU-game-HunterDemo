@@ -94,6 +94,15 @@
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "CharacterSelect",
+                    "type": "Button",
+                    "id": "68c5eb28-f4ce-44ec-a04e-d7682128ecc8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -396,8 +405,8 @@
                 },
                 {
                     "name": "",
-                    "id": "b633f648-6e3a-4bc8-8e0e-eecccb348c68",
-                    "path": "<Gamepad>/select",
+                    "id": "625ce880-81be-4af4-b0c7-2accba4c1786",
+                    "path": "<Gamepad>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "Xbox Controller;Gamepad",
@@ -407,12 +416,23 @@
                 },
                 {
                     "name": "",
-                    "id": "625ce880-81be-4af4-b0c7-2accba4c1786",
-                    "path": "<Gamepad>/start",
-                    "interactions": "",
+                    "id": "8a4f41d5-6eb2-42bd-8943-96334c93b94d",
+                    "path": "<Keyboard>/7",
+                    "interactions": "Press",
                     "processors": "",
-                    "groups": "Xbox Controller;Gamepad",
-                    "action": "ToggleControlsMenu",
+                    "groups": "KeyboardMouse",
+                    "action": "CharacterSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73f95cf2-11cf-4135-929e-312f8876e22e",
+                    "path": "<Gamepad>/select",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "Gamepad;Xbox Controller",
+                    "action": "CharacterSelect",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

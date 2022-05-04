@@ -8,6 +8,7 @@ TagManager:
   - InteractionArea
   - Interactable
   - GEM
+  - Character
   layers:
   - Default
   - TransparentFX

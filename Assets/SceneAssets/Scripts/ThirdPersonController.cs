@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
  */
 
+/* HOGUE: MODIFIED FOR ABILITY TO CHANGE BETWEEN MULTIPLE CHARACTERS */
+
 namespace StarterAssets
 {
 	[RequireComponent(typeof(CharacterController))]
@@ -96,6 +98,8 @@ namespace StarterAssets
 
 		private void Awake()
 		{
+
+
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
@@ -105,11 +109,12 @@ namespace StarterAssets
 
 		private void Start()
 		{
+			
 			_hasAnimator = TryGetComponent(out _animator);
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
 			_playerInput = GetComponent<PlayerInput>();
-
+			//setupCharacters();
 			AssignAnimationIDs();
 
 			// reset our timeouts on start
@@ -120,7 +125,7 @@ namespace StarterAssets
 		private void Update()
 		{
 			_hasAnimator = TryGetComponent(out _animator);
-			
+	
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
