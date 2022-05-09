@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: testingSG2Mat
-  m_Shader: {fileID: -6465566751694194690, guid: 263b88165c47f47e2b6760a7998653bc, type: 3}
+  m_Name: GlowXMat
+  m_Shader: {fileID: -6465566751694194690, guid: 76bd5fc5590d0437e9e6714332ff676f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -93,7 +93,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_e846d97749c54e21ae9dc466d1a4463c: 5.44
+    - Value: 5.4392166
+    - Vector1_966ce657d0844e7b90012a7cd52da739: 0.2
+    - Vector1_e846d97749c54e21ae9dc466d1a4463c: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

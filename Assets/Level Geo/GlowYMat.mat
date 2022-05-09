@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: testingSG3Mat
-  m_Shader: {fileID: -6465566751694194690, guid: 2d23eb4d1644547c186be2e66c11a293, type: 3}
+  m_Name: GlowYMat
+  m_Shader: {fileID: -6465566751694194690, guid: faacbe45b3cbd44d5900eadb846c17be, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -93,7 +93,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_e846d97749c54e21ae9dc466d1a4463c: 5.44
+    - Value: 11.075724
+    - Vector1_966ce657d0844e7b90012a7cd52da739: 0.2
+    - Vector1_e846d97749c54e21ae9dc466d1a4463c: 5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

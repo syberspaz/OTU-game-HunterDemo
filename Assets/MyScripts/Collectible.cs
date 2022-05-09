@@ -14,9 +14,9 @@ public class Collectible : MonoBehaviour
         energyPrefab = Instantiate(energyPrefab, gameObject.transform, false);
         energyPrefab.SetActive(true);
         MeshRenderer m = energyPrefab.GetComponentInChildren<MeshRenderer>();
-        Debug.Log(m);
+       // Debug.Log(m);
         energyMat = m.material;
-        Debug.Log(energyMat);
+        //Debug.Log(energyMat);
         energyMat.SetFloat("LIFE", 0.0f);
         energyPrefab.transform.SetParent(gameObject.transform);
         energyPrefab.transform.localScale = Vector3.zero;

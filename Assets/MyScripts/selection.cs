@@ -35,6 +35,9 @@ public class selection : MonoBehaviour
 
     public GameObject controlsMenu;
 
+    public Material[] energyMaterials;
+
+
     void SetPrefabShootDisplay()
     {
         prefabShootDisplayUI.GetComponent<imageList>().SetCurrentImageIndex(currentShootObjectIndex);
@@ -52,7 +55,7 @@ public class selection : MonoBehaviour
         playerControls = GetComponent<PlayerInput>();
         inputActions = playerControls.actions;
         aimAxis = inputActions.FindAction("Player/ChangeAimDistance");
-        Debug.Log(aimAxis);
+       // Debug.Log(aimAxis);
         
         //StarterAssets.StarterAssetsInputs playerInputActions = new StarterAssets.StarterAssetsInputs();
         //playerInputActions.
@@ -131,6 +134,12 @@ public class selection : MonoBehaviour
     }
     public void Update()
     {
+        var position = aimingTargeting.gameObjectToUse.transform.position;
+       // energyMaterials[0].SetFloat("Value", position.x);
+        //energyMaterials[1].SetFloat("Value", position.y);
+        //energyMaterials[2].SetFloat("Value", position.z);
+
+
         if (objectSelected)
         {
             GameObject target;
@@ -167,7 +176,7 @@ public class selection : MonoBehaviour
 
         if (objectSelected)
         {
-            Debug.Log("deselect");
+            //Debug.Log("deselect");
             selectedObject.transform.parent = environmentObject.transform;
             selectedObject.GetComponent<Outline>().enabled = false;
 
@@ -179,7 +188,7 @@ public class selection : MonoBehaviour
         {
             if (m_interact.isInRange)
             {
-                Debug.Log("select");
+                //Debug.Log("select");
 
                 // get the parent of the object for later
                 //selectedObjectParent = m_interact.objectInRange.transform.parent.gameObject;

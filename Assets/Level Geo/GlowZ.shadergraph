@@ -497,7 +497,7 @@
                 "m_Node": {
                     "m_Id": "ed8043a2b3ae4e929c6bf8787078a871"
                 },
-                "m_SlotId": 1
+                "m_SlotId": 3
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -888,7 +888,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "1b6e4de08145434f92cf5b67dffb8eaf",
     "m_Id": 0,
-    "m_DisplayName": "clippingLevel",
+    "m_DisplayName": "Axis Value",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3426,7 +3426,7 @@
     },
     "m_Name": "Axis Value",
     "m_DefaultReferenceName": "Vector1_e846d97749c54e21ae9dc466d1a4463c",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "Value",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
