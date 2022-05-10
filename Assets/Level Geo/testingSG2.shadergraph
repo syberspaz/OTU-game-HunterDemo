@@ -888,7 +888,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "1b6e4de08145434f92cf5b67dffb8eaf",
     "m_Id": 0,
-    "m_DisplayName": "clippingLevel",
+    "m_DisplayName": "Axis Value",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
