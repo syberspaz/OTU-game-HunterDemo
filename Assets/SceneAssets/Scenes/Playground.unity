@@ -401,6 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &11247196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1257,6 +1258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &107925245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1827,6 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &203256626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7207,6 +7210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &322294521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7930,6 +7934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &482413749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8560,6 +8565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &600276132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8717,6 +8723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &600770318
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9292,6 +9299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &691792495
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9454,6 +9462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &717387602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9741,6 +9750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &789212317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9898,6 +9908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &803206168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10538,6 +10549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &922178214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12415,6 +12427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1172709717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12881,6 +12894,7 @@ MonoBehaviour:
   - {fileID: 7816250939519223211, guid: c37bd986559974cb38c318906c20aed6, type: 3}
   - {fileID: 1534832132695020882, guid: e467f9c9e90074a1c8afd91280045cb7, type: 3}
   controlsMenu: {fileID: 1143199416}
+  energyMaterials: []
 --- !u!1 &1268259322
 GameObject:
   m_ObjectHideFlags: 0
@@ -13463,6 +13477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1348270541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13816,6 +13831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1415539674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14277,6 +14293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1467560097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14439,6 +14456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1550388595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14726,6 +14744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1584068646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15108,6 +15127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1611368860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15779,6 +15799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1775948612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16447,6 +16468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &1814996553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17172,6 +17194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOn: 1
+  energyPrefab: {fileID: 5390453863259713057, guid: 0da3b2e68ba56ee48a30915ac0d45bb5, type: 3}
 --- !u!65 &2072820271
 BoxCollider:
   m_ObjectHideFlags: 0
